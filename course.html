@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+
+    a:link, a:visited {
+        color:#eee;
+    }
+
+    .block {
+        background-color:rgba(0,0,0,0.2);
+        height:370px;
+        padding-left:12px;
+        padding-right:12px;
+    }
+
+    .block-sm {
+        height:180px;
+    }
+
+    .btn-flat {
+        font-family: 'Open Sans',Arial,Helvetica,Sans-Serif;
+        border-radius:0px;
+        border-width:0;
+        background-image:none;
+        padding:16px;
+        margin:0 auto;
+        margin-top:15px;
+        width:70%;
+        font-size:20pt;
+    }
+
+
+
+</style>
+ <meta name="description" content="">
+    <meta name="author" content="http://webthemez.com">
+    <!-- css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+
+    <link href="css/flexslider.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  <meta charset="UTFp-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="course.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <header>
+    <img src="pic/logofinal.png" width="70px" >
+    <a href="#" class="logo">MyCamp<span>.</span></a>
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <ul class="navigation">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+         <div class="dropdown">
+        <li><a href="#programs">Programs</a></li>
+              <div class="dropdown-content">
+    <a href="course.html">BS Program</a>
+    <a href="#">MS Program</a>
+    <a href="#">Phd Program</a>
+      </div>
+        </div>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="Research.html">Research</a></li>
+        <li><a href="#faculty">Faculty</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+    </ul>
+    </header>
+<section class="banner" id="banner">
+    </section>
+    <style>
+    #cssmenu,
+    #cssmenu ul,
+    #cssmenu ul li,
+    #cssmenu ul li a,
+    #cssmenu #menu-button {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        list-style: none;
+        line-height: 1;
+        display: block;
+        position: relative;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    #cssmenu:after,
+    #cssmenu > ul:after {
+        content: ".";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+    }
+    #cssmenu #menu-button {
+        display: none;
+    }
+    #cssmenu {
+
+        line-height: 1;
+        /*  float: left;*/
+        margin-top: 0px;
+    }
+    #menu-line {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        background: #009ae1;
+        -webkit-transition: all 0.25s ease-out;
+        -moz-transition: all 0.25s ease-out;
+        -ms-transition: all 0.25s ease-out;
+        -o-transition: all 0.25s ease-out;
+        transition: all 0.25s ease-out;
+    }
+    #cssmenu > ul > li {
+        float: left;
+    }
+    #cssmenu.align-center > ul {
+        font-size: 0;
+        text-align: center;
+    }
+    #cssmenu.align-center > ul > li {
+        display: inline-block;
+        float: none;
+    }
+    #cssmenu.align-center ul ul {
+        text-align: left;
+    }
+    #cssmenu.align-right > ul > li {
+        float: right;
+    }
+    #cssmenu.align-right ul ul {
+        text-align: right;
+    }
+    #cssmenu > ul > li > a {
+        padding: 15px 15px;
+        font-size: 14px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #FFFFFF;
+        font-weight: 700;
+        -webkit-transition: color .2s ease;
+        -moz-transition: color .2s ease;
+        -ms-transition: color .2s ease;
+        -o-transition: color .2s ease;
+        transition: color .2s ease;
+    }
+    #cssmenu > ul > li:hover > a,
+    #cssmenu > ul > li.active > a {
+        color: #FFFFFF;
+        border-bottom: 2px solid #FFFFFF !important;
+    }
+    #cssmenu > ul > li.has-sub > a {
+        padding-right: 25px;
+    }
+    #cssmenu > ul > li.has-sub > a::after {
+        position: absolute;
+        top: 21px;
+        right: 10px;
+        width: 4px;
+        height: 4px;
+        border-bottom: 1px solid #FFFFFF;
+        border-right: 1px solid #FFFFFF;
+        content: "";
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -webkit-transition: border-color 0.2s ease;
+        -moz-transition: border-color 0.2s ease;
+        -ms-transition: border-color 0.2s ease;
+        -o-transition: border-color 0.2s ease;
+        transition: border-color 0.2s ease;
+    }
+    #cssmenu > ul > li.has-sub:hover > a::after {
+        border-color: #009ae1;
+    }
+    #cssmenu ul ul {
+        position: absolute;
+        left: -9999px;
+        z-index: 9999;
+    }
+    #cssmenu li:hover > ul {
+        left: auto;
+    }
+    #cssmenu.align-right li:hover > ul {
+        right: 0;
+    }
+    #cssmenu ul ul ul {
+        margin-left: 100%;
+        top: 0;
+    }
+    #cssmenu.align-right ul ul ul {
+        margin-left: 0;
+
+    }
+    #cssmenu ul ul li {
+        height: 0;
+        -webkit-transition: height .2s ease;
+        -moz-transition: height .2s ease;
+        -ms-transition: height .2s ease;
+        -o-transition: height .2s ease;
+        transition: height .2s ease;
+    }
+    #cssmenu ul li:hover > ul > li {
+        height: 32px;
+    }
+    #cssmenu ul ul li a {
+        padding: 10px 20px;
+        width: 170px;
+        font-size: 13px;
+        background: #178dcc;
+        text-decoration: none;
+        color: #fff;
+        -webkit-transition: color .2s ease;
+        -moz-transition: color .2s ease;
+        -ms-transition: color .2s ease;
+        -o-transition: color .2s ease;
+        transition: color .2s ease;
+    }
+    #cssmenu ul ul li:hover > a,
+    #cssmenu ul ul li a:hover {
+        color: #ffffff;
+    }
+    #cssmenu ul ul li.has-sub > a::after {
+        position: absolute;
+        top: 13px;
+        right: 10px;
+        width: 4px;
+        height: 10px;
+        border-bottom: 1px solid #FFFFFF;
+        border-right: 1px solid #FFFFFF;
+        content: "";
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-transition: border-color 0.2s ease;
+        -moz-transition: border-color 0.2s ease;
+        -ms-transition: border-color 0.2s ease;
+        -o-transition: border-color 0.2s ease;
+        transition: border-color 0.2s ease;
+    }
+    #cssmenu.align-right ul ul li.has-sub > a::after {
+        right: auto;
+        left: 10px;
+        border-bottom: 0;
+        border-right: 0;
+        border-top: 1px solid #FFFFFF;
+        border-left: 1px solid #FFFFFF;
+    }
+    #cssmenu ul ul li.has-sub:hover > a::after {
+        border-color: #ffffff;
+    }
+    @media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+        #cssmenu {
+            width: 100%;
+        }
+        #cssmenu ul {
+            width: 100%;
+            display: none;
+        }
+        #cssmenu.align-center > ul,
+        #cssmenu.align-right ul ul {
+            text-align: left;
+        }
+        #cssmenu ul li,
+        #cssmenu ul ul li,
+        #cssmenu ul li:hover > ul > li {
+            width: 100%;
+            height: auto;
+            border-top: 1px solid rgba(120, 120, 120, 0.15);
+        }
+        #cssmenu ul li a,
+        #cssmenu ul ul li a {
+            width: 100%;
+        }
+        #cssmenu > ul > li,
+        #cssmenu.align-center > ul > li,
+        #cssmenu.align-right > ul > li {
+            float: none;
+            display: block;
+        }
+        #cssmenu ul ul li a {
+            padding: 20px 20px 20px 30px;
+            font-size: 12px;
+            color: #FFFFFF;
+            background: none;
+        }
+        #cssmenu ul ul li:hover > a,
+        #cssmenu ul ul li a:hover {
+            color: #FFFFFF;
+        }
+        #cssmenu ul ul ul li a {
+
+        }
+        #cssmenu ul ul,
+        #cssmenu ul ul ul {
+            position: relative;
+            left: 0;
+            right: auto;
+            width: 100%;
+            margin: 0;
+        }
+        #cssmenu > ul > li.has-sub > a::after,
+        #cssmenu ul ul li.has-sub > a::after {
+            display: none;
+        }
+        #menu-line {
+            display: none;
+        }
+        #cssmenu #menu-button {
+            display: block;
+            padding: 16px;
+            color: #FFFFFF;
+            cursor: pointer;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+        #cssmenu #menu-button::after {
+            content: '';
+            position: absolute;
+            top: 14px;
+            right: 20px;
+            display: block;
+            width: 25px;
+            height: 3px;
+            background: #FFFFFF;
+        }
+        #cssmenu #menu-button::before {
+            content: '';
+            position: absolute;
+            top: 21px;
+            right: 20px;
+            display: block;
+            width: 25px;
+            height: 4px;
+            border-top: 3px solid #FFFFFF;
+            border-bottom: 3px solid #FFFFFF;
+        }
+        #cssmenu .submenu-button {
+            position: absolute;
+            z-index: 10;
+            right: 0;
+            top: 0;
+            display: block;
+            border-left: 1px solid rgba(120, 120, 120, 0.15);
+            height: 52px;
+            width: 52px;
+            cursor: pointer;
+        }
+        #cssmenu .submenu-button::after {
+            content: '';
+            position: absolute;
+            top: 21px;
+            left: 26px;
+            display: block;
+            width: 1px;
+            height: 11px;
+            background: #FFFFFF;
+            z-index: 99;
+        }
+        #cssmenu .submenu-button::before {
+            content: '';
+            position: absolute;
+            left: 21px;
+            top: 26px;
+            display: block;
+            width: 11px;
+            height: 1px;
+            background: #FFFFFF;
+            z-index: 99;
+        }
+        #cssmenu .submenu-button.submenu-opened:after {
+            display: none;
+        }
+    }
+
+</style>
+    <section id="inner-headline">
+        
+        <div class="cont">
+            <div class="row">
+                <div class="title">
+                    <h2 class="titleText"><span>S</span>cheme of Course for Pharm.D.(Five Year Course)</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="content">
+
+        <div class="container" style="background-color: white">
+
+            <div class="row" style="background-color: white">
+                <div class="title">
+                    <h2 class="titleTexts"><span>P</span>rogram Structure</h2>
+                </div>
+                <div class="title">
+                    <h2 class="titleTextsc"><span>F</span>irst Professional Pharm.D</h2>
+                </div><br><br><br><br>
+                <div class="title">
+                    <h2 class="titleTextsco"><span>1</span>st Semester</h2>
+                </div><br><br>
+                
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                        <table class="table table-striped text-center  table-hover" align="center">
+
+                    <thead>
+                    <tr class="info" style="background-color: #002752">
+                        <th style="background-color:#082567"><p align="center"><span style="color:#FFFFFF"> Course Code</span></p></th><th style="background-color:#082567"><p align="center"><span style="color:#FFFFFF">Title</span></p></th>
+                        <th style="background-color:#082567"><p align="center"><span style="color:#FFFFFF">Credit Hours</span></p></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>ENG 300</td>
+                        <td>English-A (Functional English)</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 310</td>
+                        <td>Pharmaceutics-IA(physical Pharmacy</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 311</td>
+                        <td>Pharmaceutical Chemistry-IA (organic)</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 312</td>
+                        <td>Pharmaceutical Chemistry-IIA (Biochemistry)</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 313</td>
+                        <td>Physiology-A</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 314</td>
+                        <td>Analatical Histology</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>17+5</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <!-- 1st year 2nd Semester-->
+                <div class="title">
+                    <h2 class="titleTextsco"><span>2</span>nd Semester</h2>
+                </div><br><br>
+                <table class="table table-striped text-center  table-hover ">
+
+
+                    <thead>
+                    <tr class="info" style="background-color: #002752">
+                        <th style="background-color:#082567"><p align="center"><span style="color:#FFFFFF">Course Code</span></p></th>
+                        <th style="background-color:#082567"><p align="center"><span style="color:#FFFFFF">Title</span></p></th>
+                        <th style="background-color:#082567"><p align="center"><span style="color:#FFFFFF">Credit Hours</span></p></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>ENG 301</td>
+                        <td>English-B (Communication & Writing Skills)</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 315</td>
+                        <td>Pharmaceutics IB(physical Pharmacy)</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 316</td>
+                        <td>Pharmaceutical Chemistry-IB (organic)</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 317</td>
+                        <td>Pharmaceutical Chemistry-IIB (Biochemistry)</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 318</td>
+                        <td>Physiology-B</td>
+                        <td>3+1</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>16+4</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <div class="title">
+                    <h2 class="titleTextsc"><span>S</span>econd Professional Pharm.D</h2>
+                </div><br><br><br><br>
+                <div class="title">
+                    <h2 class="titleTextsco"><span>1</span>st Semester</h2>
+                </div><br><br>
+                <table class="table table-striped text-center  table-hover ">
+
+                    <thead><tr class="info" style="background-color: #002752">
+                        <th style="background-color:#082567"><p align="center"><span style="color:#FFFFFF">Course Code</span></p></th>
+                        <th style="background-color:#082567"><p align="center"><span style="color:#FFFFFF">Title</span></p></th>
+                        <th style="background-color:#082567"><p align="center"><span style="color:#FFFFFF">Credit Hours</span></p></th></tr></thead>
+                    <tbody>
+                    <tr>
+                        <td>IS 402</td>
+                        <td>Islamic Studies</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 410</td>
+                        <td>Pharmaceutics-IIA(Dosage Forms Science)</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 411</td>
+                        <td>Pharmaceutics-IIIA ( Pharmaceutical Microbiology & Immunology)</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 412</td>
+                        <td>Pharmacology and Theropecutics-IA</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 413</td>
+                        <td>Pharmocognosy-IA (Basic)</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 414</td>
+                        <td>Pharmacy Practice-IA (Pharmaceutical Mathematics)</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>18+4</td>
+                    </tr>
+                    </tbody></table>
+
+                <div class="title">
+                    <h2 class="titleTextsco"><span>2</span>nd Semester</h2>
+                </div><br><br><table class="table table-striped text-center  table-hover ">
+                    
+
+                    <thead><tr class="info" style="background-color: #002752">
+                        <th style="background-color:#082567"><p align="center"><span style="color:#FFFFFF">Course code</span></p></th>
+                        <th style="background-color:#082567"><p align="center"><span style="color:#FFFFFF">Title</span></p></th>
+                        <th style="background-color:#082567"><p align="center"><span style="color:#FFFFFF">Credit Hours</span></p></th></tr></thead><tbody>
+                    <tr>
+                        <td>IS 403</td>
+                        <td>Pakistan Studies</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 415</td>
+                        <td>Pharmaceutics-IIB(Dosage Forms Science)</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 416</td>
+                        <td>Pharmaceutics-IIIB ( Pharmaceutical Microbiology & Immunology)</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 417</td>
+                        <td>Pharmacology and Theropecutics-IB</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 418</td>
+                        <td>Pharmocognosy-IB (Basic)</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 419</td>
+                        <td>Pharmacy Practice-IB(Bio-statistics)</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>17+4</td>
+                    </tr>
+                    </tbody></table>
+
+
+                <div class="title">
+                    <h2 class="titleTextsc"><span>T</span>hird Professional Pharm.D</h2>
+                </div><br><br><br><br>
+                 <div class="title">
+                    <h2 class="titleTextsco"><span>1</span>st Semester</h2>
+                </div><br><br><table class="table table-striped text-center  table-hover ">
+                    
+                    <thead><tr class="info" style="background-color: #002752">
+                        <th style="background-color:#082567"><p align="center"><span style="color:#FFFFFF">Course code</span></p></th>
+                        <th style="background-color:#082567"><p align="center"><span style="color:#FFFFFF">Title</span></p></th>
+                        <th style="background-color:#082567"><p align="center"><span style="color:#FFFFFF">Credit Hours</span></p></th></tr></thead><tbody>
+                    <tr>
+                        <td>PHARM 510</td>
+                        <td>Pharmacy Practice-IIA (Disposing Pharmacy)</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 511</td>
+                        <td>Pharmaceutical Chemistry-IIIA(Pharmaceutical Analysis)</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 512</td>
+                        <td>Pharmacology and Theropecutics-IIA</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 513</td>
+                        <td>Pharmocognosy-IIA (Advance)</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 514</td>
+                        <td>Pharmacy</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>15+5</td>
+                    </tr>
+                    </tbody></table>
+
+                 <div class="title">
+                    <h2 class="titleTextsco"><span>2</span>nd Semester</h2>
+                </div><br><br><table class="table table-striped text-center  table-hover ">
+                    
+                    <thead><tr class="info" style="background-color: #002752">
+                        <th style="background-color:#082567"><p align="center"><span style="color:#FFFFFF">Course code</span></p></th>
+                        <th style="background-color:#082567"><p align="center"><span style="color:#FFFFFF">Title</span></p></th>
+                        <th style="background-color:#082567"><p align="center"><span style="color:#FFFFFF">Credit Hours</span></p></th></tr></thead><tbody>
+                    <tr>
+                        <td>PHARM 515</td>
+                        <td>Pharmacy Practice-IIB (Community, Aocial & Administrative Pharmacy)</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 516</td>
+                        <td>Pharmaceutical Chemistry-IIIB(Pharmaceutical Analysis)</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 517</td>
+                        <td>Pharmacology and Theropecutics-IIB</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 518</td>
+                        <td>Pharmocognosy-IIB (Advance)</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 519</td>
+                        <td>Pharmacy Practice-III (Computer and its Application in Pharmacy)</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>15+4</td>
+                    </tr>
+                    </tbody></table>
+
+
+                <div class="title">
+                    <h2 class="titleTextsc"><span>F</span>ourth Professional Pharm.D</h2>
+                </div><br><br><br><br>
+                 <div class="title">
+                    <h2 class="titleTextsco"><span>1</span>st Semester</h2>
+                </div><br><br><table class="table table-striped text-center  table-hover ">
+                    
+                    <thead><tr class="info" style="background-color: #002752">
+                        <th style="background-color:#082567"><p align="center"><span style="color:#FFFFFF">Course code</span></p></th>
+                        <th style="background-color:#082567"><p align="center"><span style="color:#FFFFFF">Title</span></p></th>
+                        <th style="background-color:#082567"><p align="center"><span style="color:#FFFFFF">Credit Hours</span></p></th></tr></thead><tbody>
+                    <tr>
+                        <td>PHARM 610</td>
+                        <td>Pharmacy Practice-IVA (Hospital Pharmacy</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 611</td>
+                        <td>Pharmacy Practice-VA(Clinical Pharmacy-I)</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 612</td>
+                        <td>Pharmaceutics-IVA (Industrial Pharmacy)</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 613</td>
+                        <td>Pharmaceutics-VA (Biopharmaceutics & Pharmacokinetics)</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 614</td>
+                        <td>Pharmaceutics-VIA (Pharmaceutical Quality Management)</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>15+4</td>
+                    </tr>
+                    </tbody></table>
+
+                <div class="title">
+                    <h2 class="titleTextsco"><span>2</span>nd Semester</h2>
+                </div><br><br><table class="table table-striped text-center  table-hover ">
+                    
+                    <thead><tr class="info" style="background-color: #002752">
+                        <th style="background-color:#082567"><p align="center"><span style="color:#FFFFFF">Course code</span></p></th>
+                        <th style="background-color:#082567"><p align="center"><span style="color:#FFFFFF">Title</span></p></th>
+                        <th style="background-color:#082567"><p align="center"> <span style="color:#FFFFFF">Credit Hours</span></p></th></tr></thead><tbody>
+                    <tr>
+                        <td>PHARM 615</td>
+                        <td>Pharmacy Practice-IVB (Hospital Pharmacy</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 616</td>
+                        <td>Pharmacy Practice-VB(Clinical Pharmacy-I)</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 617</td>
+                        <td>Pharmaceutics-IVB (Industrial Pharmacy)</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 618</td>
+                        <td>Pharmaceutics-VB (Biopharmaceutics & Pharmacokinetics)</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 619</td>
+                        <td>Pharmaceutics-VIB (Pharmaceutical Quality Management)</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>15+4</td>
+                    </tr>
+                    </tbody></table>
+                <div class="title">
+                    <h2 class="titleTextsc"><span>F</span>ifth Professional Pharm.D</h2>
+                </div><br><br><br><br>
+                 <div class="title">
+                    <h2 class="titleTextsco"><span>1</span>st Semester</h2>
+                </div><br><br><table class="table table-striped text-center  table-hover ">
+                    
+                    <thead><tr class="info" style="background-color: #002752">
+                        <th style="background-color:#082567"><p align="center"><span style="color:#FFFFFF">Course code</span></p></th>
+                        <th style="background-color:#082567"><p align="center"><span style="color:#FFFFFF">Title</span></p></th>
+                        <th style="background-color:#082567"><p align="center"><span style="color:#FFFFFF">Credit Hours</span></p></th></tr></thead><tbody>
+                    <tr>
+                        <td>PHARM 710</td>
+                        <td>Pharmaceutics-VIIA (Pharmaceutical technology)</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 711</td>
+                        <td>Pharmacy Practice-VIA(Advanced Clinical Pharmacy-II)</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 712</td>
+                        <td>Pharmacy Practice-VIIA(Forensic Pharmacy)</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 713</td>
+                        <td>Pharmacy Practice-VIIIA (Pharmaceutical Management & Marketing)</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 714</td>
+                        <td>Pharmaceutical Chemistry-IVA (Medicianl Chemistry)</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>15+3</td>
+                    </tr>
+                    </tbody></table>
+
+                <div class="title">
+                    <h2 class="titleTextsco"><span>2</span>nd Semester</h2>
+                </div><br><br><table class="table table-striped text-center  table-hover ">
+                    
+                    <thead><tr class="info" style="background-color: #002752">
+                        <th style="background-color:#082567"><p align="center"><span style="color:#FFFFFF">Course code</span></p></th>
+                        <th style="background-color:#082567"><p align="center"><span style="color:#FFFFFF">Title</span></p></th>
+                        <th style="background-color:#082567"><p align="center"> <span style="color:#FFFFFF">Credit Hours</span></p></th></tr></thead><tbody>
+                    <tr>
+                        <td>PHARM 715</td>
+                        <td>Pharmaceutics-VIIB (Pharmaceutical technology)</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 716</td>
+                        <td>Pharmacy Practice-VIB(Advanced Clinical Pharmacy-II)</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 717</td>
+                        <td>Pharmacy Practice-VIIB(Forensic Pharmacy)</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 718</td>
+                        <td>Pharmacy Practice-VIIIB (Pharmaceutical Management & Marketing)</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>PHARM 719</td>
+                        <td>Pharmaceutical Chemistry-IVB (Medicianl Chemistry)</td>
+                        <td>3+1</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>15+3</td>
+                    </tr>
+                    </tbody></table>
+
+
+
+
+            </div>
+        </div>
+    </div>
+    
+
+     <footer class="footer">
+  	 <div class="containers">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>MyCamp</h4>
+  	 			<p>Department of University aims to provide the best quality education to equip females with state of the art technology and enable them to compete professionally in industry.</p>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Categories</h4>
+  	 			<ul>
+  	 				<li><a href="#">Projects</a></li>
+  	 				<li><a href="#">Program</a></li>
+  	 				<li><a href="#">Activities</a></li>
+  	 				<li><a href="#">Faculty</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Faculty</h4>
+  	 			<ul>
+  	 				<li><a href="#">Dr Aisha Aziz</a></li>
+  	 				<li><a href="#">Ms Abeer Adel</a></li>
+  	 				<li><a href="#">Asma Eraj</a></li>
+  	 				<li><a href="#">Mrs Atia Tabassum</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            const header =document.querySelector('header');
+            header.classList.toggle("sticky",window.scrollY > 0);
+        });
+        function toggleMenu(){
+            const menuToggle =document.querySelector('.menuToggle');
+            const navigation =document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+        
+    </script>
+    <script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/jquery.fancybox.pack.js" type="text/javascript"></script>
+<script src="js/jquery.fancybox-media.js" type="text/javascript"></script>
+<script src="js/portfolio/jquery.quicksand.js" type="text/javascript"></script>
+<script src="js/portfolio/setting.js" type="text/javascript"></script>
+<script src="js/jquery.flexslider.js" type="text/javascript"></script>
+<script src="js/animate.js" type="text/javascript"></script>
+<script src="js/custom.js" type="text/javascript"></script>
+<script src="js/owl-carousel/owl.carousel.js" type="text/javascript"></script>
+</body>
+</html>
